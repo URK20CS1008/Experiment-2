@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:blue;" align="center">Company1</h1>
+    <hr>
+        <div style="text-align:center;">
+            <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="application.html">Application Form</a>
+        </div>
+    <hr>
+    <form action="server.php" method="post">
+        <fieldset>
+            <legend align="center">Application Form</legend>
+        
+        <table align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td>Application Number:</td>
+                <td><input type="text" placeholder="KU2021CS1001" pattern="[K,U,C,S]{12}" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="********" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" required></td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="tel" placeholder="Enter Mobile Number" pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="Enter Email ID"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio">Male
+                <input type="radio">Female</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>Languages known:</td>
+                <td><input type="checkbox">English
+                <input type="checkbox">Tamil
+                <input type="checkbox">Malayalam
+                <input type="checkbox">Telugu
+                <td><input type="checkbox">Hindi</td>
+            </tr>
+            <tr>
+                <td>Select your course</td>
+                <td>
+                    <select>
+                        <option>B.Tech Computer Science and Engineering</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload your photo</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><progress value="50" max="100"></progress></td>
+                <td>50% Uploading Completed</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+
+        
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
